@@ -1,0 +1,21 @@
+.mute-toggle {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.mute-toggle input {
+  display: none;
+}
+
+.mute-toggle svg {
+  transition: 0.3s ease;
+  filter: drop-shadow(0 0 5px white);
+}
+
+.mute-toggle input:checked + svg {
+  opacity: 0.5;
+  filter: grayscale(100%) drop-shadow(0 0 5px red);
+}
